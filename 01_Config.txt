@@ -1,0 +1,59 @@
+In git there are three type of config 
+                    i. Local
+                    ii. System 
+                    iii. Global
+
+#we always work with global config
+
+01. Check Git Configuration:
+            git config --list #To check all type configuration 
+            i. git config --local --list # to check local configuration
+            ii. git config --system --list # to check system configuration
+            iii. git config --global --list # to check global configuration
+
+02. Set UserName:
+            i. git config --local user.name "UserName" # to set username for local configuration
+            ii. git config --system user.name "UserName" # to set username for system configuration
+            iii. git config --global user.name "UserName" # to set username for global configuration
+
+03. Set Email:
+            i. git config --local user.email "UserEmail" # to set user email for local configuration
+            ii. git config --system user.name "UserEmail" # to set user email for system configuration
+            iii. git config --global user.name "UserEmail" # to set user email for global configuration
+
+04. Unset UserName/Email:
+            i. git config --global --unset user.name
+            ii. git config --global --unset user.email
+
+05. To SetUp SSH:
+        Copy SSH key and link with your github ssh key section
+
+            i. git clone <repository ssh code> #for clone any repository from github by using ssh key
+
+06. Git Working Procedure:
+            working directory => staging area => local repository => remote repository
+            test_project      => git add      => git commit       => git push
+            
+07. Creating Git Folder and Adding files:
+            i. git init #Make git Folder
+            ii. git status # to check status of git Folder
+            
+08. Working with Staging Area:
+            i. git add # to add file on staging area
+            ii. git add . # to add modified file on staging area
+            iii. git diff # to show what change we made
+            iv. git restore # to restore your un-staging file
+
+09. Working with Local Area:
+            i. git commit -m "write your message" # for add files on local area
+            ii. git log # to show all of your commit
+            iii. git reset --soft HEAD~ # to change back on staging area but if i use --hard than back on working directory
+            iv. git checkout <id> # to remove your commit
+            v. git checkout master # to back your all commit
+            
+10. HEAD and commit:
+            i.git show # to show all commit details
+            ii. git show <commit id> # to show specific commit details
+            iii. git show HEAD # to show last commit details
+            iv. 
+            
